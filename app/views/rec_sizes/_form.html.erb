@@ -1,0 +1,17 @@
+<%= form_for(rec_size) do |f| %>
+  <% if rec_size.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(rec_size.errors.count, "error") %> prohibited this rec_size from being saved:</h2>
+
+      <ul>
+      <% rec_size.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

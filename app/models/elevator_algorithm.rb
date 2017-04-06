@@ -1,0 +1,2 @@
+class ElevatorAlgorithm < ApplicationRecord
+end

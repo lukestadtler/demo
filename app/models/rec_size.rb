@@ -1,0 +1,2 @@
+class RecSize < ApplicationRecord
+end

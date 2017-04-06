@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Elevator Algorithms</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @elevator_algorithms.each do |elevator_algorithm| %>
+      <tr>
+        <td><%= link_to 'Show', elevator_algorithm %></td>
+        <td><%= link_to 'Edit', edit_elevator_algorithm_path(elevator_algorithm) %></td>
+        <td><%= link_to 'Destroy', elevator_algorithm, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Elevator Algorithm', new_elevator_algorithm_path %>
